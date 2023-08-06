@@ -1,4 +1,15 @@
+## Introduction
+This is my implementation of the Blockchain Cryptography first module of the Alchemy University Ethereum Course.
+To be able to achieve the project goals, I created a way to include a nonce and a signature in the client side, so that the server is able to check the validity of the transaction without:
+* Leaking sensitive information -> Posting a private key over the network
+* Being vulnerable to replay attacks ->  Checking the sender and nonce of the transaction
+
+`Note: When the server is run it provides the generated accounts and a signature example to use as Proof-of-Concept.`
+
+---
+
 ## ECDSA Node
+
 
 This project is an example of using a client and server to facilitate transfers between different addresses. Since there is just a single server on the back-end handling transfers, this is clearly very centralized. We won't worry about distributed consensus for this project.
 
